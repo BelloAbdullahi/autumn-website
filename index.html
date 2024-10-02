@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Activities Finder</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- google-fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!--Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Autumn Finder 🍂</a>
+            <ul class="navLinks" id="navItems">
+                <li><a href="">Home</a></li>
+                <li><a href="#">Activities</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="hamburgerBtn">
+                <i class="bi bi-list menuBtn" onclick="toggleNav()"></i>
+                <!-- <i class="bi bi-x-circle close"></i> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="heroOverlayBg">
+
+            <h1>Find the Best Things to Do This Autumn</h1>
+            <p>Discover local activities, events, and more to enjoy this beautiful season.</p>
+            <form class="search-bar">
+                <input type="text" class="inSmall" placeholder="Search for autumn activities...">
+                <button type="button" class="searchBtn">Search</button>
+                <button type="button" class="smallSearchBtn"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Activity Categories -->
+    <section class="categories">
+        <h2>Explore by Category</h2>
+        <div class="category-grid">
+            <a class="category" href="https://10best.usatoday.com/awards/travel/best-apple-orchard-2024/">🍎 Apple
+                Picking</a>
+            <a class="category" href="https://www.alltrails.com/">🍂 Hiking Trails</a>
+            <a class="category"
+                href="https://www.travelks.com/things-to-do/farm-experiences/farm-fresh-fun/pumpkin-patches/">🎃 Pumpkin
+                Patches</a>
+            <a class="category"
+                href="https://www.english-heritage.org.uk/visit/inspire-me/real-story-of-bonfire-night/">🔥 Bonfires</a>
+        </div>
+    </section>
+
+    <!-- Featured Activities -->
+    <section class="featured-activities">
+        <h2>Featured Autumn Activities</h2>
+        <div class="activity-grid">
+            <div class="activity-container">
+                <div class="activity-card">
+                    <div class="activityCardBlurBg">
+                        <img src="./assets/images/apple-picking.png" alt="Apple Picking">
+                        <h3>Apple Picking</h3>
+                        <p>Visit local orchards and enjoy fresh apple picking.</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activityCardBlurBg">
+                        <img src="./assets/images/hiking.png" alt="Hiking">
+                        <h3>Hiking Trails</h3>
+                        <p>Explore stunning autumn hiking trails near you.</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activityCardBlurBg">
+                        <img src="./assets/images/pumpkin.png" alt="Pumpkin Patch">
+                        <h3>Pumpkin Patches</h3>
+                        <p>Find the perfect pumpkin to carve this Halloween.</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="activityCardBlurBg">
+                        <img src="./assets/images/oktoberfest.png" alt="oktoberfest">
+                        <h3>Oktoberfest</h3>
+                        <p>Find the ideal location to celebrate Oktoberfest this autumn.</p>
+                    </div>
+                </div>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48088088.698999606!2d-145.37304899999998!3d42.638802999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3bf125714c7cf%3A0xe3690b7d3f75cfcf!2sAutumn%20Hills%20Orchard!5e0!3m2!1sen!2sng!4v1727298598789!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Adventures</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-section">
+                <h4>Join the Quest</h4>
+                <p>Subscribe to our newsletter for the latest autumn adventures!</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="subscribe">Subscribe</button>
+                    <button type="submit" class="smallSubscribe"><i class="bi bi-envelope"></i></button>
+                </form>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:info@autumnfinder.com">info@autumnfinder.com</a></p>
+                <p>Phone: <a href="tel:+1 (555) 123-4567">+1 (555) 123-4567</a></p>
+                <p>Address: 123 Fall Lane, Maple City, USA</p>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 AutumnFinder. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

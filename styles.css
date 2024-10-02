@@ -1,0 +1,396 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f4f0;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e67e22;
+  padding: 15px 20px;
+}
+
+.navLinks {
+  list-style-type: none;
+}
+
+.navLinks li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.navLinks a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hamburgerBtn {
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  background: url("https://tinyurl.com/47etjy3e") #f88e32;
+}
+
+.heroOverlayBg {
+  color: white;
+  background-color: rgba(161, 161, 161, 0.2);
+  width: 100%;
+  height: 100%;
+  padding: 6.25rem 1.25rem;
+  backdrop-filter: blur(2px);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adding text shadow */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Stronger shadow for heading */
+}
+
+.hero p {
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Consistent shadow for paragraph */
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.smallSearchBtn {
+  display: none;
+}
+
+/* Activity Categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3.125rem 1.25rem;
+  text-align: center;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.category {
+  border: none;
+  outline: none;
+  background-color: #f39c12;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Featured Activities */
+.featured-activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+}
+
+.activity-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.activity-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.activity-card {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column vertical;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-align: center;
+  text-wrap: wrap;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 20rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.activity-card img {
+  width: 100%;
+}
+
+.activity-card h3 {
+  /* text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); */
+  font-size: 2rem;
+  padding: 15px;
+}
+
+.activity-card p {
+  padding: 0 15px 15px 15px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50; /* Dark background for contrast */
+  color: white;
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12; /* Autumn orange */
+}
+
+.footer-section p {
+  margin-bottom: 10px;
+}
+
+.footer-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #f39c12;
+}
+
+/* Newsletter Form */
+#newsletter-form input[type="email"] {
+  padding: 10px;
+  width: 70%;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#newsletter-form button {
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#newsletter-form button:hover {
+  background-color: #e67e22;
+}
+
+.smallSubscribe {
+  display: none;
+}
+
+/* Social Media Icons */
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f39c12;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #7f8c8d;
+  margin-top: 30px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 50rem) {
+  /* navbar */
+  .navLinks {
+    position: absolute;
+    background: whitesmoke;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 1.5rem 0 0 1rem;
+    z-index: 111111111111111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 15rem;
+    color: #2c3e50;
+    transform: translateX(-300%);
+    transition: all 0.3s linear;
+  }
+
+  .showNav {
+    position: absolute;
+    background: whitesmoke;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 1.5rem 0 0 1rem;
+    z-index: 111111111111111;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    width: 15rem;
+    list-style-type: none;
+    transform: translateX(0);
+    transition: all 0.3s linear;
+  }
+
+  .showNav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hamburgerBtn {
+    display: block;
+  }
+
+  .menuBtn {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .showclose {
+    display: block;
+  }
+
+  /* hero */
+
+  .searchBtn {
+    display: none;
+  }
+
+  .inSmall {
+    max-width: 70%;
+  }
+
+  .smallSearchBtn {
+    display: inline-block;
+  }
+
+  /* featured-activities */
+
+  .activityCardBlurBg {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* footer */
+
+  .subscribe {
+    display: none;
+  }
+
+  .smallSubscribe {
+    display: inline-block;
+  }
+  
+  #newsletter-form input[type="email"] {
+    margin-right: 0px;
+  }
+}
